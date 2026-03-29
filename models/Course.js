@@ -7,7 +7,7 @@ const courseSchema = new mongoose.Schema({
   countryFlag: { type: String, default: "🌍" },
   level: { type: String, required: true, enum: ["Foundation", "Undergraduate", "Postgraduate", "PhD"] },
   duration: { type: String, required: true },
-  tuitionFee: { type: String, required: true },
+  tuitionFee: { type: String, default: "" },
   description: { type: String, trim: true },
   requirements: { type: String, trim: true },
   intake: { type: String, trim: true },
